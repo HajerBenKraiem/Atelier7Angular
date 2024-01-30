@@ -1,0 +1,40 @@
+{
+  "produits": [
+    {
+      "id": "1",
+      "code": "836831",
+      "designation": "Panier plastique",
+      "prix": "1000"
+    },
+    {
+      "id": "5",
+      "code": "836831",
+      "designation": "chemise",
+      "prix": "44"
+    },
+    {
+      "id": "2",
+      "code": "aaa",
+      "designation": "pull",
+      "prix": "55"
+    },
+    {
+      "id": "4",
+      "code": "jj",
+      "designation": "sandalles",
+      "prix": "55"
+    },
+    {
+      "id": "6",
+      "code": "x12",
+      "designation": "table",
+      "prix": "44"
+    },
+    {
+      "id": "8",
+      "code": "836831",
+      "designation": "panier en bois",
+      "prix": "55"
+    }
+  ]
+}
