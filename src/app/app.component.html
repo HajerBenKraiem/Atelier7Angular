@@ -8,6 +8,7 @@
           (click)="setActionCourante(action)"
           [style.backgroundColor] = "action==actionCourante?'yellow':'green'"
            routerLink="{{action.route}}">
+           <i [class]="action.icon"></i>
             {{action.titre}}
 
           </button>

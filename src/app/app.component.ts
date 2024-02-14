@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ng-gestion-produits';
   actions:Array<any>=[
-    {titre:"Accueil",route:"/accueil"},
-    {titre:"Liste des produits",route:"/produits"},
-    {titre:"Ajouter Produit",route:"/ajouterProduit"}
+    {titre:"Accueil",route:"/accueil" , icon:"bi bi-house-add-fill" },
+    { titre: "Liste des produits", route: "/produits", icon: "bi bi-card-checklist" },
+  { titre: "Ajouter Produit", route: "/ajouterProduit", icon: "bi bi-database-fill-add" }
   ]
  
   actionCourante:any;

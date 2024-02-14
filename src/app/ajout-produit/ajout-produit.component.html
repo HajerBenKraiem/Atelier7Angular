@@ -1,36 +1,36 @@
-
-<div>
+<div class="container">
     <h1> Fiche Produit </h1>
-    <form #produitForm="ngForm" (ngSubmit)="validerFormulaire(produitForm)">
-    <table>
-    <tr >
-    <td> Id: </td>
-    <td><input id="id" name="id" type="text" [(ngModel)]="nouveauProduit.id" required  /> </td>
-    </tr>
-    <tr >
-    <td> Code: </td>
-    <td> <input type ="text" name="code" [(ngModel)]="nouveauProduit.code"/> </td>
-    </tr>
-    <tr >
-    <td> Désignation: </td>
-    <td><input type ="text" name="designation" [(ngModel)]="nouveauProduit.designation"/>
-    </td>
-    </tr>
-    <tr >
+    <form #produitForm="ngForm" (ngSubmit)="validerFormulaire()">
+
+      <table>
+        <tr>
+          <td> Code: </td>
+          <input type="text" name="code" [(ngModel)]="nouveauProduit.code" />
+        </tr>
+        <tr>
+          <td> Désignation: </td>
+          <input type="text" name="designation" [(ngModel)]="nouveauProduit.designation" />
+        </tr>
+        <tr>
+          <td> Prix: </td>
+          <input type="text" name="prix" [(ngModel)]="nouveauProduit.prix" />
+        </tr>
+        <tr>
+          <td>Categorie:</td>
   
-    <td> Prix: </td>
-    <td> <input type ="text" name="prix" [(ngModel)]="nouveauProduit.prix"/>
-    </td>
-    </tr>
-    <tr >
-    <td [align]="'center'" colspan ="2">
-        <input class="btn btn-primary" type="submit"   value="Valider" [disabled]="!produitForm.form.valid" />
-    <button (click) ="effacer()"  class="btn btn-danger"> <i class="bi bi-trash"></i> effacer </button>
-    
-     </td>
-    </tr>
-    </table>
+            <select id="categoryId" name="categoryId" [(ngModel)]="selectedCategoryId">
+              <option *ngFor="let category of categories" [value]="category.id">{{ category.libelle }}</option>
+            </select>
+          
+        </tr>
+  
+        <tr>
+          <td [align]="'center'" colspan ="2">
+              <input class="btn btn-primary" type="submit" value="Valider" [disabled]="!produitForm.form.valid" />
+              <button (click)="effacer()" class="btn btn-danger"> <i class="bi bi-trash"></i> Effacer </button>
+          </td>
+      </tr>
+      </table>
     </form>
-    </div>
-    <div>
-    
+  </div>
+  
